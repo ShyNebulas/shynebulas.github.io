@@ -1,0 +1,35 @@
+:root {
+    --black: #1c1c1c;
+    --white: #FFF9EC;
+    --pink: #D34F73;
+    --orange: #DB7F67;
+    --gray: #6E8898;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.nav-link, #description {
+    color: var(--gray);
+    font-size: 1.25em;
+}
+
+.nav-link:hover {
+    color: white; 
+}
+
+#hello {
+    font-size: 10em;
+    background: -webkit-linear-gradient(var(--orange), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 3.5em;
+}
+
+
+
+
