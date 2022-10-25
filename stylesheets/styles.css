@@ -3,7 +3,8 @@
     --white: #FFF9EC;
     --pink: #D34F73;
     --orange: #DB7F67;
-    --gray: #6E8898;
+    --gray: #4F4F4F;
+    --light-gray: #6E8898;
 }
 
 body {
@@ -11,12 +12,12 @@ body {
 }
 
 .nav-link, #description {
-    color: var(--gray);
+    color: var(--light-gray);
     font-size: 1.25em;
 }
 
-.nav-link:hover {
-    color: white; 
+.nav-link:hover, .bi:hover {
+    color: var(--white); 
 }
 
 #hello {
@@ -26,8 +27,27 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-h2 {
+#name {
     font-size: 3.5em;
+}
+
+#projects {
+    color: var(--light-gray);
+    font-size: 2.5em;
+}
+
+.card-gray {
+    color: var(--white);
+    background-color: var(--gray);
+}
+
+.bi {
+    color: var(--light-gray);
+    font-size: 1.4em;
+}
+
+.card-footer {
+    border: none;
 }
 
 
