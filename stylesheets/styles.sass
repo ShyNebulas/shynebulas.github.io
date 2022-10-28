@@ -49,7 +49,7 @@ body
     background-size: 100% 0.2em
     background-position: 0 107%
 
-#projects h2 
+#about h2, #projects h2, #contact h2
     @include colour-size($light-gray, 2.5em)
 
 .card 
@@ -57,14 +57,26 @@ body
     background-color: $black
     border-color: $pink
 
-.card-title
+.card-title, .blockquote
     color: $white   
 
 .card-footer
     border: none
 
+.card-pink
+    background-color: $pink
+    border-color: $pink
+
 .icon
     @include colour-size($gray, 1.4em)
     text-decoration: none
 
+#card-tabby       
+    border-color: $gray
+
+#card-mooks
+    border-color: $orange
+
+#card-ruby
+    border-color: #660708
 

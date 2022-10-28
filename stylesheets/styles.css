@@ -47,7 +47,7 @@ body {
   background-position: 0 107%;
 }
 
-#projects h2 {
+#about h2, #projects h2, #contact h2 {
   color: #6E8898;
   font-size: 2.5em;
 }
@@ -58,7 +58,7 @@ body {
   border-color: #D34F73;
 }
 
-.card-title {
+.card-title, .blockquote {
   color: #FFF9EC;
 }
 
@@ -66,10 +66,27 @@ body {
   border: none;
 }
 
+.card-pink {
+  background-color: #D34F73;
+  border-color: #D34F73;
+}
+
 .icon {
   color: #4F4F4F;
   font-size: 1.4em;
   text-decoration: none;
+}
+
+#card-tabby {
+  border-color: #4F4F4F;
+}
+
+#card-mooks {
+  border-color: #DB7F67;
+}
+
+#card-ruby {
+  border-color: #660708;
 }
 
 /*# sourceMappingURL=styles.css.map */
