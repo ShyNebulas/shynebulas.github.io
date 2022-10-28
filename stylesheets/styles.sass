@@ -1,0 +1,70 @@
+$white: #FFF9EC
+$pink: #D34F73
+$orange: #DB7F67
+$light-gray: #6E8898
+$gray: #4F4F4F
+$black: #1c1c1c
+
+@mixin colour-size($colour, $size)
+    color: $colour
+    font-size: $size
+
+body
+    background-color: $black
+
+.nav-item:hover
+    color: $white
+    background-color: rgba($light-gray, 0.2)
+    border-radius: 5px
+
+.nav-link, #jumbotron p
+   @include colour-size($light-gray, 1.25em)
+
+.nav-link:hover, .underline:hover, .icon:hover
+    color: $white 
+
+//TODO: Change pixels to more suitable unit
+#jumbotron
+    background-image: linear-gradient($black, $black), linear-gradient($pink, $orange)
+    background-origin: border-box
+    background-clip: padding-box, border-box
+    border: 1px double transparent
+    border-radius: 12px
+    padding: 3em
+
+#jumbotron h1
+    background: -webkit-linear-gradient($orange, $pink)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    font-size: 10em
+
+#jumbotron h2
+    @include colour-size($white, 3.5em)
+
+.underline
+    color: $light-gray
+    text-decoration: none
+    background-image: linear-gradient(120deg, $orange 0%, $pink 100%)
+    background-repeat: no-repeat
+    background-size: 100% 0.2em
+    background-position: 0 107%
+
+#projects h2 
+    @include colour-size($light-gray, 2.5em)
+
+.card 
+    color: $light-gray
+    background-color: $black
+    border-color: $pink
+
+.card-title
+    color: $white   
+
+.card-footer
+    border: none
+
+.icon
+    @include colour-size($gray, 1.4em)
+    text-decoration: none
+
+

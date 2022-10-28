@@ -1,81 +1,75 @@
-:root {
-    --black: #1c1c1c;
-    --white: #FFF9EC;
-    --pink: #D34F73;
-    --orange: #DB7F67;
-    --gray: #4F4F4F;
-    --light-gray: #6E8898;
-}
-
 body {
-    background-color: var(--black);
+  background-color: #1c1c1c;
 }
 
-.nav-link, #description {
-    color: var(--light-gray);
-    font-size: 1.25em;
+.nav-item:hover {
+  color: #FFF9EC;
+  background-color: rgba(110, 136, 152, 0.2);
+  border-radius: 5px;
 }
 
-.nav-link:hover, .bi:hover {
-    color: var(--white); 
+.nav-link, #jumbotron p {
+  color: #6E8898;
+  font-size: 1.25em;
+}
+
+.nav-link:hover, .underline:hover, .icon:hover {
+  color: #FFF9EC;
 }
 
 #jumbotron {
-    border: 1px double transparent; 
-    border-radius: 12px;
-    background-image: linear-gradient(var(--black), var(--black)), linear-gradient(var(--pink), var(--orange));
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    padding: 3em;
+  background-image: linear-gradient(#1c1c1c, #1c1c1c), linear-gradient(#D34F73, #DB7F67);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border: 1px double transparent;
+  border-radius: 12px;
+  padding: 3em;
 }
 
-#hello {
-    font-size: 10em;
-    background: -webkit-linear-gradient(var(--orange), var(--pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#jumbotron h1 {
+  background: -webkit-linear-gradient(#DB7F67, #D34F73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10em;
 }
 
-#name {
-    font-size: 3.5em;
+#jumbotron h2 {
+  color: #FFF9EC;
+  font-size: 3.5em;
 }
 
 .underline {
-    background-image: linear-gradient(120deg, var(--orange) 0%, var(--pink) 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 107%;
+  color: #6E8898;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, #DB7F67 0%, #D34F73 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 107%;
 }
 
-#tooltip {
-    color: var(--light-gray);
-    text-decoration: none;
-   
+#projects h2 {
+  color: #6E8898;
+  font-size: 2.5em;
 }
 
-#tooltip:hover {
-    color: var(--white);
+.card {
+  color: #6E8898;
+  background-color: #1c1c1c;
+  border-color: #D34F73;
 }
 
-#projects {
-    color: var(--light-gray);
-    font-size: 2.5em;
-}
-
-.card-gray {
-    color: var(--white);
-    background-color: var(--gray);
-}
-
-.bi {
-    color: var(--light-gray);
-    font-size: 1.4em;
+.card-title {
+  color: #FFF9EC;
 }
 
 .card-footer {
-    border: none;
+  border: none;
 }
 
+.icon {
+  color: #4F4F4F;
+  font-size: 1.4em;
+  text-decoration: none;
+}
 
-
-
+/*# sourceMappingURL=styles.css.map */
