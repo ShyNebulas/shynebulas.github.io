@@ -2,6 +2,12 @@ body {
   background-color: #1c1c1c;
 }
 
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
+
 .nav-item:hover {
   color: #FFF9EC;
   background-color: rgba(110, 136, 152, 0.2);
@@ -13,7 +19,7 @@ body {
   font-size: 1.25em;
 }
 
-.nav-link:hover, .underline:hover, .icon:hover {
+.nav-link:hover, .underline:hover, .card-title, .card-title a:hover, .icon:hover {
   color: #FFF9EC;
 }
 
@@ -30,12 +36,29 @@ body {
   background: -webkit-linear-gradient(#DB7F67, #D34F73);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 10em;
+}
+@media (max-width: 600px) {
+  #jumbotron h1 {
+    font-size: 6em;
+  }
+}
+@media (min-width: 600px) {
+  #jumbotron h1 {
+    font-size: 10em;
+  }
 }
 
-#jumbotron h2 {
-  color: #FFF9EC;
-  font-size: 3.5em;
+@media (max-width: 600px) {
+  #jumbotron h2 {
+    color: #FFF9EC;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 600px) {
+  #jumbotron h2 {
+    color: #FFF9EC;
+    font-size: 3.5em;
+  }
 }
 
 .underline {
@@ -58,8 +81,9 @@ body {
   border-color: #D34F73;
 }
 
-.card-title, .blockquote {
-  color: #FFF9EC;
+.card-title a {
+  color: #6E8898;
+  text-decoration: none;
 }
 
 .card-footer {

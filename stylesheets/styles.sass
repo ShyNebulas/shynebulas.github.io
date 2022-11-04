@@ -5,12 +5,24 @@ $light-gray: #6E8898
 $gray: #4F4F4F
 $black: #1c1c1c
 
+@mixin mobile 
+  @media (max-width: 600px)
+    @content
+  
+@mixin desktop 
+  @media (min-width: 600px) 
+    @content
+      
 @mixin colour-size($colour, $size)
     color: $colour
     font-size: $size
 
 body
     background-color: $black
+
+.navbar
+    @include mobile
+        display: none
 
 .nav-item:hover
     color: $white
@@ -20,10 +32,9 @@ body
 .nav-link, #jumbotron p
    @include colour-size($light-gray, 1.25em)
 
-.nav-link:hover, .underline:hover, .icon:hover
+.nav-link:hover, .underline:hover, .card-title, .card-title a:hover, .icon:hover
     color: $white 
 
-//TODO: Change pixels to more suitable unit
 #jumbotron
     background-image: linear-gradient($black, $black), linear-gradient($pink, $orange)
     background-origin: border-box
@@ -36,10 +47,16 @@ body
     background: -webkit-linear-gradient($orange, $pink)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-    font-size: 10em
-
+    @include mobile
+        font-size: 6em
+    @include desktop
+        font-size: 10em
+    
 #jumbotron h2
-    @include colour-size($white, 3.5em)
+    @include mobile
+        @include colour-size($white, 1.5em)
+    @include desktop
+        @include colour-size($white, 3.5em)
 
 .underline
     color: $light-gray
@@ -57,8 +74,9 @@ body
     background-color: $black
     border-color: $pink
 
-.card-title, .blockquote
-    color: $white   
+.card-title a
+    color: $light-gray
+    text-decoration: none 
 
 .card-footer
     border: none
