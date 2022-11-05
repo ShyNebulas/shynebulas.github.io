@@ -20,19 +20,10 @@ $black: #1c1c1c
 body
     background-color: $black
 
-.navbar
-    @include mobile
-        display: none
-
-.nav-item:hover
-    color: $white
-    background-color: rgba($light-gray, 0.2)
-    border-radius: 5px
-
-.nav-link, #jumbotron p
+.sentence
    @include colour-size($light-gray, 1.25em)
 
-.nav-link:hover, .underline:hover, .card-title, .card-title a:hover, .icon:hover
+.underline:hover, .icon-big:hover, .card-title, .card-title a:hover, .icon:hover
     color: $white 
 
 #jumbotron
@@ -66,7 +57,10 @@ body
     background-size: 100% 0.2em
     background-position: 0 107%
 
-#about h2, #projects h2, #contact h2
+.icon-big
+    font-size: 2em !important
+
+#about h2, .heading, #contact h2
     @include colour-size($light-gray, 2.5em)
 
 .card 
@@ -85,7 +79,7 @@ body
     background-color: $pink
     border-color: $pink
 
-.icon
+.icon, .icon-big
     @include colour-size($gray, 1.4em)
     text-decoration: none
 

@@ -2,24 +2,12 @@ body {
   background-color: #1c1c1c;
 }
 
-@media (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
-}
-
-.nav-item:hover {
-  color: #FFF9EC;
-  background-color: rgba(110, 136, 152, 0.2);
-  border-radius: 5px;
-}
-
-.nav-link, #jumbotron p {
+.sentence {
   color: #6E8898;
   font-size: 1.25em;
 }
 
-.nav-link:hover, .underline:hover, .card-title, .card-title a:hover, .icon:hover {
+.underline:hover, .icon-big:hover, .card-title, .card-title a:hover, .icon:hover {
   color: #FFF9EC;
 }
 
@@ -70,7 +58,11 @@ body {
   background-position: 0 107%;
 }
 
-#about h2, #projects h2, #contact h2 {
+.icon-big {
+  font-size: 2em !important;
+}
+
+#about h2, .heading, #contact h2 {
   color: #6E8898;
   font-size: 2.5em;
 }
@@ -95,7 +87,7 @@ body {
   border-color: #D34F73;
 }
 
-.icon {
+.icon, .icon-big {
   color: #4F4F4F;
   font-size: 1.4em;
   text-decoration: none;
