@@ -93,16 +93,16 @@ body {
   text-decoration: none;
 }
 
-#card-tabby {
+#card-tabby, #card-simple-shell {
   border-color: #4F4F4F;
 }
 
-#card-mooks {
+#card-cryptogram-game {
   border-color: #DB7F67;
 }
 
-#card-ruby {
-  border-color: #660708;
+#card-scs {
+  border-color: #7E22CE;
 }
 
 /*# sourceMappingURL=styles.css.map */
